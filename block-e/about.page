@@ -15,4 +15,9 @@ echo $date->year; // output the current year
 [‌[‌/‌e‌]‌]
 ~~~
 
+### Dependency
+
+ - **Extension**
+   - Block
+
 <!-- block:donate -->

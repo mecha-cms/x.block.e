@@ -10,3 +10,8 @@ This plugin is not recommended to be used on a site with multiple users. Other u
 echo $date->year; // output the current year
 [‌[‌/‌e‌]‌]
 ~~~
+
+### Dependency
+
+ - **Extension**
+   - Block
