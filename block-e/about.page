@@ -20,6 +20,6 @@ echo $date->year; // output the current year
 
 #### Extension
 
- - Block
+ - Blocks
 
 <!-- block:donate -->
