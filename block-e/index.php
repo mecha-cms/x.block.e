@@ -1,12 +1,12 @@
 <?php
 
-function fn_block_replace_e($content) {
+function fn_block_replace_e($content, $lot) {
     return Block::replace('e', function($content) {
         ob_start();
         extract(Lot::get(null, []));
         eval($content);
         return ob_get_clean();
-    }, $content);
+    }, $lot['content']);
 }
 
-Block::set('e', 'fn_block_replace_e', 9);
+Hook::set('page.content', 'fn_block_replace_e', .9);
