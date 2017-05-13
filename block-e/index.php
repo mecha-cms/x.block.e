@@ -6,7 +6,7 @@ function fn_block_replace_e($content, $lot) {
         extract(Lot::get(null, []));
         eval($content);
         return ob_get_clean();
-    }, $lot['content']);
+    }, $content);
 }
 
 Hook::set('page.content', 'fn_block_replace_e', .9);
