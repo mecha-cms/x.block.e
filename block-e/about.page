@@ -4,6 +4,7 @@ description: Evaluate PHP syntax within the page content.
 author: Taufik Nurrohman
 type: Markdown
 version: 2.0.3
+dependency: {"extension":["block"]}
 ...
 
 This plugin is not recommended to be used on a site with multiple users. Other users may use this block to execute malicious functions to break your system.
@@ -15,11 +16,5 @@ This plugin is not recommended to be used on a site with multiple users. Other u
 echo $date->year; // output the current year
 [‌[‌/‌e‌]‌]
 ~~~
-
-### Dependency
-
-#### Extension
-
- - Blocks
 
 <!-- block:donate -->
