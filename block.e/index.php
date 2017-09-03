@@ -1,7 +1,7 @@
 <?php
 
-function fn_block_e($content, $lot) {
-    Hook::reset('page.content', 'fn_block_replace_e'); // do it once…
+function fn_block_e($content, $lot = []) {
+    Hook::reset('*.content', 'fn_block_e'); // do it once…
     return Block::replace('e', function($content) {
         ob_start();
         extract(Lot::get(null, []));
@@ -10,4 +10,4 @@ function fn_block_e($content, $lot) {
     }, $content);
 }
 
-Hook::set('page.content', 'fn_block_e', .9);
+Hook::set('*.content', 'fn_block_e', .9);

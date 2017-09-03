@@ -1,9 +1,9 @@
 ---
-title: Eval Block
+title: Block: Eval
 description: Evaluate PHP syntax within the page content.
 author: Taufik Nurrohman
 type: Markdown
-version: 2.0.3
+version: 2.1.0
 dependency: {"extension":["block"]}
 ...
 
