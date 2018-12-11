@@ -3,7 +3,7 @@ title: Block: Eval
 description: Evaluate PHP syntax within the page content.
 author: Taufik Nurrohman
 type: Markdown
-version: 2.2.0
+version: 2.3.0
 
 dependency:
   extension:
@@ -14,9 +14,9 @@ This plugin is not recommended to be used on a site with multiple users. Other u
 
 ### Usage
 
-~~~ .txt
+~~~ .php
 [‌[‌e‌]‌]
-echo $date->year; // output the current year
+echo $date->year; // Output the current year
 [‌[‌/‌e‌]‌]
 ~~~
 

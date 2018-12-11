@@ -1,12 +1,12 @@
-<?php
+<?php namespace fn\block;
 
-function fn_block_e($content, $lot = []) {
-    return Block::replace('e', function($content) {
+function e($content, array $lot = []) {
+    return $content ? \Block::replace('e', function($content) {
         ob_start();
-        extract(Lot::get(null, []));
+        extract(\Lot::get());
         eval($content);
         return ob_get_clean();
-    }, $content);
+    }, $content) : $content;
 }
 
-Hook::set('*.content', 'fn_block_e', .9, 1);
+\Hook::set('*.content', __NAMESPACE__ . "\\e", .9, 1);
