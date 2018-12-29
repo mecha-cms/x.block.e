@@ -3,7 +3,7 @@
 function e($content, array $lot = []) {
     return $content ? \Block::replace('e', function($content) {
         ob_start();
-        extract(\Lot::get());
+        extract(\Lot::get(), EXTR_SKIP);
         eval($content);
         return ob_get_clean();
     }, $content) : $content;
