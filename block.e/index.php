@@ -6,7 +6,7 @@ function e($content, array $lot = []) {
         extract(\Lot::get(), EXTR_SKIP);
         eval($content);
         return ob_get_clean();
-    }, $content) : $content;
+    }, $content, $this, \Page::class) : $content;
 }
 
 \Hook::set('*.content', __NAMESPACE__ . "\\e", .9, 1);
