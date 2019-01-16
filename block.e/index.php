@@ -1,12 +1,15 @@
 <?php namespace fn\block;
 
 function e($content, array $lot = []) {
-    return $content ? \Block::replace('e', function($content) {
+    $that = $this;
+    return $content ? \Block::replace('e', function($content) use($lot, $that) {
         ob_start();
-        extract(\Lot::get(), EXTR_SKIP);
-        eval($content);
+        \fn(function() use($content) {
+            extract(\Lot::get(), EXTR_SKIP);
+            eval($content);
+        }, $lot, $that, \Page::class);
         return ob_get_clean();
-    }, $content, $this, \Page::class) : $content;
+    }, $content) : $content;
 }
 
 \Hook::set('*.content', __NAMESPACE__ . "\\e", .9, 1);
