@@ -3,7 +3,7 @@ title: Block: Eval
 description: Evaluate PHP syntax within the page content.
 author: Taufik Nurrohman
 type: Markdown
-version: 2.3.3
+version: 2.3.4
 
 dependency:
   extension:
