@@ -12,4 +12,4 @@ function e($content, array $lot = []) {
     }, $content) : $content;
 }
 
-\Hook::set('*.content', __NAMESPACE__ . "\\e", .9, 1);
+\Hook::set('*.content', __NAMESPACE__ . "\\e", .9);
