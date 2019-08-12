@@ -1,4 +1,4 @@
-<?php namespace _\block;
+<?php namespace _\lot\x\block;
 
 function e($content, array $lot = []) {
     $that = $this;
@@ -7,9 +7,9 @@ function e($content, array $lot = []) {
         \fire(function() use($content) {
             extract($GLOBALS, \EXTR_SKIP);
             eval($content);
-        }, $lot, $that, \Page::class);
+        }, $lot, $that);
         return \ob_get_clean();
     }, $content) : $content;
 }
 
-\Hook::set('*.content', __NAMESPACE__ . "\\e", .9);
+\Hook::set('page.content', __NAMESPACE__ . "\\e", .9);
