@@ -2,7 +2,7 @@
 
 function e($content, array $lot = []) {
     $that = $this;
-    return $content ? \Block::replace('e', function($content) use($lot, $that) {
+    return $content ? \Block::alter('e', function($content) use($lot, $that) {
         \ob_start();
         \fire(function() use($content) {
             extract($GLOBALS, \EXTR_SKIP);
