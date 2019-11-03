@@ -3,7 +3,7 @@ title: Eval Block
 description: Evaluate PHP syntax within the page content.
 author: Taufik Nurrohman
 type: Markdown
-version: 2.3.5
+version: 2.3.6
 
 use:
   '.\lot\x\block': 1
