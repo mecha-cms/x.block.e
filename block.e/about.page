@@ -3,7 +3,7 @@ title: Eval Block
 description: Evaluate PHP expression within the page content.
 author: Taufik Nurrohman
 type: Markdown
-version: 2.3.8
+version: 2.4.0
 
 use:
   '.\lot\x\block': 1
@@ -13,6 +13,6 @@ use:
 
 ### Usage
 
-<pre><code class="php">&#x5B;<span>&#x5B;e&#x5D;</span>&#x5D;
+<pre><code class="php">&#x5B;&#x5B;e&#x5D;&#x5D;
 echo $date-&gt;year; // Output the current year
-&#x5B;<span>&#x5B;/e&#x5D;</span>&#x5D;</code></pre>
+&#x5B;&#x5B;/e&#x5D;&#x5D;</code></pre>

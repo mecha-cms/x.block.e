@@ -1,4 +1,4 @@
-<?php namespace _\lot\x\block;
+<?php namespace x\block;
 
 function e($content, array $lot = []) {
     $that = $this;
