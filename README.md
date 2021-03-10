@@ -4,6 +4,10 @@ Eval Block Extension for Mecha
 Release Notes
 -------------
 
+### main
+
+ - [@mecha-cms/mecha#96](https://github.com/mecha-cms/mecha/issues/96)
+
 ### 2.3.8
 
  - Marked this extension as not secure.
