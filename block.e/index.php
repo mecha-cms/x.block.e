@@ -1,6 +1,6 @@
-<?php namespace x\block;
+<?php namespace x\block__e;
 
-function e($content, array $lot = []) {
+function block($content, array $lot = []) {
     $that = $this;
     return $content ? \Block::alter('e', function($content) use($lot, $that) {
         \ob_start();
@@ -12,4 +12,4 @@ function e($content, array $lot = []) {
     }, $content) : $content;
 }
 
-\Hook::set('page.content', __NAMESPACE__ . "\\e", .9);
+\Hook::set('page.content', __NAMESPACE__ . "\\block", .9);
