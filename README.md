@@ -1,5 +1,5 @@
-Eval Block Extension for Mecha
-==============================
+Eval Block Extension for [Mecha](https://github.com/mecha-cms/mecha)
+====================================================================
 
 Release Notes
 -------------
@@ -18,5 +18,5 @@ Release Notes
 
 ### 2.3.6
 
- - Included global variables to the evaluation block.
  - Included `$this` variable that maps to the current page instance.
+ - Included global variables to the evaluation block.
