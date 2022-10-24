@@ -1,8 +1,8 @@
 {
-  "description": "Placement system.",
+  "description": "Evaluate PHP expression within the page content.",
   "license": "GPL-3.0-or-later",
-  "name": "mecha-cms/x.block",
+  "name": "mecha-cms/x.block.e",
   "require": {
-    "mecha-cms/x.page": "^2.0.0"
+    "mecha-cms/x.block": "^2.0.0"
   }
 }

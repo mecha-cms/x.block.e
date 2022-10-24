@@ -1,15 +1,15 @@
-<?php namespace x\block;
+<?php namespace x;
 
-function e($content, array $lot = []) {
-    $that = $this;
-    return $content ? \Block::alter('e', function($content) use($lot, $that) {
+function block__e(string $content, array $data = []) {
+    if (isset($data[1]) && \is_string($data[1])) {
         \ob_start();
-        \fire(function() use($content) {
-            extract($GLOBALS, \EXTR_SKIP);
-            eval($content);
-        }, $lot, $that);
+        \fire(function () use ($data) {
+            \extract($GLOBALS, \EXTR_SKIP);
+            eval($data[1]);
+        }, [], $this);
         return \ob_get_clean();
-    }, $content) : $content;
+    }
+    return null;
 }
 
-\Hook::set('page.content', __NAMESPACE__ . "\\e", .9);
+\Hook::set('block.e', __NAMESPACE__ . "\\block__e", 0);
