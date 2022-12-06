@@ -16,6 +16,6 @@ use:
 
 ### Usage
 
-<pre><code class="php">&#x5B;&#x5B;e&#x5D;&#x5D;
-echo $date-&gt;year; // Output the current year
-&#x5B;&#x5B;/e&#x5D;&#x5D;</code></pre>
+<pre><code class="php">&#x5b;&#x5b;e&#x5d;&#x5d;
+echo $date-&gt;year; // Prints the current year
+&#x5b;&#x5b;/e&#x5d;&#x5d;</code></pre>
