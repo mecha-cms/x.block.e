@@ -1,4 +1,4 @@
-<?php namespace x;
+<?php namespace x\block__e;
 
 function block__e(string $content, array $data = []) {
     if (isset($data[1]) && \is_string($data[1])) {
