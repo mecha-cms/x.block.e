@@ -1,11 +1,11 @@
 <?php namespace x\block__e;
 
-function block__e(string $content, array $data = []) {
-    if (isset($data[1]) && \is_string($data[1])) {
+function block__e(string $content, array $lot = []) {
+    if (isset($lot[1]) && \is_string($lot[1])) {
         \ob_start();
-        \fire(function () use ($data) {
+        \fire(function () use ($lot) {
             \extract($GLOBALS, \EXTR_SKIP);
-            eval($data[1]);
+            eval($lot[1]);
         }, [], $this);
         return \ob_get_clean();
     }

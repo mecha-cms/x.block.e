@@ -1,5 +1,5 @@
 {
-  "description": "Evaluates PHP expression within the page content.",
+  "description": "Evaluates PHP expressions within the page content.",
   "license": "GPL-3.0-or-later",
   "name": "mecha-cms/x.block.e",
   "require": {
